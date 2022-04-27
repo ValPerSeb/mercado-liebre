@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#ebebeb;
+    font-family: 'roboto';
+    font-size: 12px;
+}
+
+/* header*/
+header{
+background-color: #EAC926;
+}
+
+.primera-linea{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo{
+    width: 50%
+  }
+
+
+.barra{
+    text-align: center;
+    width: 50%;  
+}
+
+.busqueda{
+    border:none;
+    border-radius: 5px;
+    color: #666;
+    font-size: 14px;
+    padding: 4px;
+    width: 60%;
+}
+
+button.icon-search{
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 3px 5px;
+}
+
+.bloque2{
+    font-size: 16px;
+    color: black;
+    text-align: center
+}
+
+nav {
+    display: none;
+}
+
+ul,li,a{
+    color: black;
+    list-style-type: none;
+    margin: 6px;
+    padding: 0;
+    text-align: left;
+    text-decoration: none
+}
+
+.burguer-menu{
+    background-color:#03264C;
+    border-radius: 8px;
+    color: #ebebeb;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    max-width: 40px;
+    padding: 6px 9px 6px 9px;
+    text-align: center;
+}
+/*finaliza header*/
+
+.banner{
+    width: 100%;
+}
+
+/*inicia main*/
+h2{
+    color: #666;
+    font-size:24px;
+    margin: 10px;
+}
+
+main{
+    width: 90%;
+}
+
+main img{
+    width: 150px;
+    height: 150px;
+}
+
+main article i{
+    display: block;
+    border: #39b54a 1px solid;
+    border-radius: 50%;
+    color: #39b54a;
+    font-size: 16px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    width: 30px;
+    right: 20px;
+    top: -15px;
+    transition:all 450ms
+}
+
+main p.precio{
+    flex-grow: 0.3;
+    font-size: 18px;
+    color: black;
+}
+
+main .grow{
+    display: flex;
+}
+
+main p.descuento{
+    color:#39b54a;
+    flex-grow: 0.7;
+    font-size: 16px;    
+}
+
+main p.producto{
+    display: none;
+    font-size: 16px;    
+    margin: 5px;
+}
+
+article:hover p.producto{    
+    display: block;  
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article:hover i{
+    transform: rotate(-90deg);
+}
+
+main article{
+    background-color: white;
+    height: 270px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.interna{
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    text-align: left; 
+}
+
+.ultima-visita{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ofertas{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.formularios{
+    margin-left: 14%;
+    
+}
+.formularios div{
+    margin: 14px;
+}
+
+.formulario-registro{
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+}
+
+.titulos-formulario{
+    display: block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.seleccion1{
+    margin: 5px;
+}
+.selecciones{
+    display: block;
+    margin: 5px;
+}
+
+.formularios button{
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 14px;
+    padding: 5px 9px;
+    transition: all 450ms;
+}
+
+.formularios button:hover{
+    background-color: #0022AA;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+/* finaliza main*/
+
+/*footer*/
+.icof{
+    color: #1259c3;
+    font-size: 2em;
+    margin-top: 10px;
+    
+}
+footer{
+    background-color: white;
+    font-size: 12px;
+    margin: 7px;
+    padding: 45px 45px 5px 45px;
+    text-align: center;
+}
+
+footer h3, p{
+    color: #666;
+}
+
+.copy {
+    font-size: 12px;
+    text-align: left;
+}
+/*cierre footer*/
+
+@media (min-width: 769px){
+
+    .burguer-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: flex;
+        font-size: 16px;
+        margin: 4px;
+    }
+    .primera-linea {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .logo {
+        width: 30%;
+    }
+    .barra {
+        width: 39%;
+    }
+    .bloque2{
+        width: 30%;
+        text-align: right;
+    }
+    .ultima-visita, .ofertas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main article{
+        margin: 50px;
+        width: 30%;
+    }
+
+    .formulario-registro{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    nav {
+        max-width: 1000px;
+        margin: auto;
+    }
+    nav ul{
+        margin: 12px;
+        font-size: 20px;
+    }
+    main article{
+        margin: 10px;
+        width: 250px;
+    }
+
+    .pie-de-pagina{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+
+    .icof{
+        color: #1259c3;
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    .icof:hover{
+        color:#EAC926
+    }
+}
